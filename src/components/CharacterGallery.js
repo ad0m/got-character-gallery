@@ -1,5 +1,5 @@
 import React from 'react';
-import characterData from '../data/characterData.json'
+import characterData from '../../../Practice/14-react-state-deployment-module/03-netlify-deployment-lesson/activities/04-Stu-RemoteRepoSetUp/lor-cicd-pipeline/src/data/characterData.json'
 import Character from './Character'
 
 const CharacterGallery = () => {
