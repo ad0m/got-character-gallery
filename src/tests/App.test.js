@@ -1,25 +1,26 @@
-// import App from '../App'
-// import { shallow } from 'enzyme'
+import App from '../App'
+import { shallow } from 'enzyme'
 
-// const setup = () => shallow(<App />)
+const setup = () => shallow(<App />)
 
-// const findByTestAttr = (wrapper, val) => wrapper.find(`[data-test='${val}']`)
 
-// it('App Component Renders Without Error', () => {
-//   const wrapper = setup()
-//   const appComponent = findByTestAttr(wrapper, "component-app")
+const findByTestAttr = (wrapper, val) => wrapper.find(`[data-test='${val}']`)
 
-//   expect(appComponent.length).toBe(1)
-// })
+it('App Component Renders Without Error', () => {
+  const wrapper = setup()
+  const appComponent = findByTestAttr(wrapper, "component-app")
 
-import React from 'react';
+  expect(appComponent.length).toBe(1)
+})
 
-const App = () => {
-return (
-<div data-test='component-app'>
-<h1>App Component</h1>
-</div>
-);
-}
+// import React from 'react';
 
-export default App;
+// const App = () => {
+// return (
+// <div data-test='component-app'>
+// <h1>App Component</h1>
+// </div>
+// );
+// }
+
+// export default App;
